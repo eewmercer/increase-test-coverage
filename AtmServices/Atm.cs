@@ -20,9 +20,10 @@ public class Atm
 
             return true;
 
+        } else
+        {
+            return false;
         }
-
-        return false;
 
     }
 
@@ -32,12 +33,12 @@ public class Atm
 
             return false;
 
+        } else
+        {
+            balance += amount;
+
+            return true;
         }
-
-        balance += amount;
-
-        return true;
-
     }
 
     public double getBalance() {
